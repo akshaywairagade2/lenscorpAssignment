@@ -2,8 +2,9 @@
     display: flex;
     flex-direction: column;
     background-color: white;
-     gap: 30px;
-
+    gap: 30px;
+    padding-left: 40px;
+    padding-right: 40px;
 }
 .main h1{
     color: #5452fe;
@@ -34,11 +35,10 @@
 .para_div div span{
     color: #5452fe;
     margin-top: 2rem;
-    padding: 2rem;
     margin-left: 4rem;
     margin-bottom: -4rem;
     font-weight: bold;
-
+    font-size: 28px;
 }
 
 .para_div div p {

@@ -1,6 +1,8 @@
 /* styles/Navbar.module.css */
 
 .navbar {
+    position: sticky;
+    top: 0;
     background-color: #241aea;
     padding: 1rem;
     display: flex;

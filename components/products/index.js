@@ -9,9 +9,9 @@ const Products = () => {
   return (
     <div className={styles.product}>
       <div style={{display:'row'}}>
-      <h1>
+      <text style={{fontSize:"50px", color:"blue", marginLeft:"4rem"}}>
         Products
-      </h1>
+      </text>
       
       <div style={{display: 'flex', flex: 1, flexDirection: 'row'}}>
         <div style={{display: 'flex', flex: 0.33}}>

@@ -12,7 +12,9 @@ import forensic_sm from '../../public/forensic_sm.png'
 const Markets = () => {
   return (
     <div className={styles.main}>
-        <h1>Markets</h1>
+        <text style={{fontSize:"50px", marginLeft:"5rem", marginTop:"1rem", color:"blue"}}>
+          Markets
+        </text>
         <div className={styles.sub_main}>
             <Comp_Market
               side={"left"}

@@ -1,0 +1,14 @@
+.footer_main{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: rgb(69, 3, 155);
+    color: white;
+    height: 20vh;
+    padding: 2rem;
+
+}
+.footer_main p{
+    margin-left: 15rem;
+}

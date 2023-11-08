@@ -1,0 +1,30 @@
+.component_with_background {
+    width: 100vw;
+    height: 130vh;
+    background-image: url('../../public/background.jpg');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.component_with_background div{
+    background-color: white;
+    overflow: hidden;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-around;
+     align-items: center;
+     width: 50vw;
+}
+.component_with_background div h1 {
+   color: #5452fe;
+   font-size: 3rem;
+}
+.component_with_background div p{
+    color: rgba(119, 136, 153, 0.644);
+    text-align: left;
+    font-size: 1.2rem;
+    padding: 20px;
+    margin-left: 1rem;
+    line-height: 2;
+    padding: 1rem;
+}
