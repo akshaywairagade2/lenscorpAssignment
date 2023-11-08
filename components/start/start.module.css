@@ -1,0 +1,50 @@
+.start {
+    margin-top: 10px;
+    margin-bottom: 40px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 50px;
+  }
+
+.start h1{
+    color: #5452fe;
+    font-size: 46px;
+    font-family: 'TildaSans',Arial,sans-serif;
+    line-height: 1.35;
+    font-weight: 700;
+    opacity: 0.9;
+    background-position: center center;
+    border-color: transparent;
+    border-style: solid;
+}
+
+.start h3{
+    margin-top:30px;
+    color: #5452fe;
+    font-size: 30px;
+    font-family: 'TildaSans',Arial,sans-serif;
+    line-height: 1.35;
+    font-weight: 700;
+    opacity: 0.9;
+    background-position: center center;
+    border-color: transparent;
+    border-style: solid;
+}
+
+.start ul{
+    margin-top: 20px;
+}
+
+.start li{
+    
+    display: list-item;
+    text-align: -webkit-match-parent;
+    color: blue;
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+
+
