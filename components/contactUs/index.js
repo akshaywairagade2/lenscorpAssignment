@@ -20,7 +20,7 @@ const ContactUs = () => {
     alert("Please click on Send button of the email to get the query")
   }
   return (
-    <div className={styles.contact_main}>
+    <div className={styles.contact_main} id='contact'>
       <text style={{fontSize:"40px", fontWeight:700, color:"blue"}}>
         Contact Us
       </text>

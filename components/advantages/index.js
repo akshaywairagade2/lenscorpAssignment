@@ -12,7 +12,7 @@ import Comp_Advantages from './advantage_component';
 
 const Advantages = () => {
   return (
-    <div className={styles.mainadvantage}>
+    <div className={styles.mainadvantage} id='advantages'>
       <h1>Advantages</h1>
       <div className={styles.advantage}>
         <Comp_Advantages 

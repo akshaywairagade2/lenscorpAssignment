@@ -3,7 +3,7 @@
 .navbar {
     position: sticky;
     top: 0;
-    background-color: #241aea;
+    background-color: rgba(112,0,206,1);
     padding: 1rem;
     display: flex;
     flex-direction: row;

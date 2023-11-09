@@ -11,7 +11,7 @@ import forensic_sm from '../../public/forensic_sm.png'
 
 const Markets = () => {
   return (
-    <div className={styles.main}>
+    <div className={styles.main} id='markets'>
         <text style={{fontSize:"50px", marginLeft:"5rem", marginTop:"1rem", color:"blue"}}>
           Markets
         </text>

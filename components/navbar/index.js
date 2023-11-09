@@ -30,26 +30,26 @@ const Navbar = () => {
             title={"Products ↓ "}
             text1={"Server SDK for fingerprint recognition"} href1={"/sdk"}
             text2={"Server platform for fingerprint recognition"} href2={"/rest_api"}
-            text3={"Fingers capture and recognition for mobile devices"} href3={"/sdk"}
+            text3={"Fingers capture and recognition for mobile devices"} href3={"https://neurodactyl.com/mobileapp"}
           />
           <DropDown 
             title={"Solutions ↓ "}
-            text1={"Biometric Duplication"} href1={"/sdk"}
-            text2={"Fingerprint Card Conversion"} href2={"/sdk"}
+            text1={"Biometric Duplication"} href1={"https://neurodactyl.com/deduplication"}
+            text2={"Fingerprint Card Conversion"} href2={"https://neurodactyl.com/fingerprintcards"}
           />
-          <Link style={{marginRight: 20}} href="/">
+          <Link style={{marginRight: 20}} href="#advantages">
             Advantages
           </Link>
-          <Link style={{marginRight: 20}} href="/">
+          <Link style={{marginRight: 20}} href="#markets">
             Markets
           </Link>
-          <Link style={{marginRight: 20}} href="/">
+          <Link style={{marginRight: 20}} href="#news">
             News
           </Link>
-          <Link style={{marginRight: 20}} href="/">
+          <Link style={{marginRight: 20}} href="#aboutus">
             About Us
           </Link>
-          <Link style={{marginRight: 20}} href="/">
+          <Link style={{marginRight: 20}} href="#contact">
             Contact
           </Link>
           <a style={{marginRight: 20}} onClick={() => handleEmailClick()}>

@@ -2,7 +2,7 @@ import Image from 'next/image'
 import Navbar from '../../../components/navbar'
 import StartSDKRestAPI from '../../../components/StartSDKRestAPI'
 import Footer from '../../../components/footer'
-import Tabs from '../tabs'
+import Tabs from '../sdk/tabs'
 import Requests from '../../../components/Requests'
 
 

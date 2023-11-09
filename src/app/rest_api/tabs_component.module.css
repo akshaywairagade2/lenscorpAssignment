@@ -1,0 +1,25 @@
+.Tab_Component {
+  padding: 100px;
+}
+
+
+.Tab_Component h1{
+    margin-bottom: 14px;
+    color: "black";
+    font-size: 18px;
+    font-family: 'TildaSans',Arial,sans-serif;
+    font-weight: 600;
+    color: #000000;
+    padding-left:40px;
+    line-height: 1.35;
+}
+
+
+.Tab_Component p{
+    line-height: 1.55;
+    font-size: 16px;
+    font-family: 'TildaSans',Arial,sans-serif;
+    font-weight: 300;
+    color: #000000;
+    padding-left:40px;
+}
