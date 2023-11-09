@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 const Product_Component = (props) => {
   return (
     <div  style={{marginLeft:"40px", marginRight:"40px", textAlign:"center"}}>
@@ -11,10 +12,12 @@ const Product_Component = (props) => {
           />
       </div>
         
-
        <p  style={{color:"blue" , textAlign:"center", marginTop:"20px", marginBottom:"20px"}}><b>{props.title}</b></p>
 
-      <h1 style={{color:"blue" , textAlign:"center"}} ><a href={props.linkURL}><u>{props.linkText}</u></a></h1>
+      {/* <h1 style={{color:"blue" , textAlign:"center"}} ><a href={props.linkURL}><u>{props.linkText}</u></a></h1> */}
+      <Link href={props.linkURL}>
+      <h1 style={{color:"blue" , textAlign:"center"}} ><u>{props.linkText}</u></h1>
+      </Link>
 
       <p style={{color:"blue" , textAlign:"center"}}>{props.description}</p>
         

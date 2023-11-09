@@ -27,9 +27,9 @@ const ContactUs = () => {
       <text style={{fontSize:"25px", fontWeight:400, color:"blue"}}>Any question about our products or technologies?<br></br>
 Just text us!</text>
       <div className={styles.sub_form}>
-        <div><label>Email</label><input type='text' placeholder='Your Email' onChange={(e) => { setEmail(e.target.value) }}></input></div>
+        <div><label>Email</label><input type='email' placeholder='Your Email' onChange={(e) => { setEmail(e.target.value) }}></input></div>
          <div><label>Name</label><input type='text' placeholder='Your Name' onChange={(e) => { setName(e.target.value) }}></input></div>
-         <div> <label>Phone</label><input type='text' placeholder='Your Phone' onChange={(e) => { setPhone(e.target.value) }}></input></div>
+         <div> <label>Phone</label><input type='number' placeholder='Your Phone' onChange={(e) => { setPhone(e.target.value) }}></input></div>
           <div> <label>Your Question</label><textarea type='text' placeholder='Your Question' onChange={(e) => { setQuestion(e.target.value) }}></textarea></div>
           <div></div> <button onClick={()=>sendResponse()}>Send</button></div>
       </div>

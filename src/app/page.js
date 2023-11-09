@@ -7,6 +7,7 @@ import Markets from '../../components/markets'
 import AboutUs from '../../components/aboutUs'
 import ContactUs from '../../components/contactUs'
 import Footer from '../../components/footer'
+import startSDKRestAPI from '../../components/StartSDKRestAPI'
 
 
 export default function Home() {
@@ -22,6 +23,7 @@ export default function Home() {
     <AboutUs/>
     <ContactUs/>
     <Footer/>
+    <startSDKRestAPI/>
     </>
   )
 }

@@ -4,6 +4,7 @@ import styles from './navbar.module.css';
 import Image from 'next/image'
 import logo from '../../public/logo.png'
 import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
+import DropDown from './dropdown';
 
 const Navbar = () => {
 
@@ -24,13 +25,18 @@ const Navbar = () => {
           />
           </Link>
       </div>
-      <div>
-          <Link style={{marginRight: 20}} href="/">
-            Products
-          </Link>
-          <Link style={{marginRight: 20}} href="/">
-            Solutions
-          </Link>
+      <div style={{display: 'flex', flexDirection: 'row'}}>
+          <DropDown 
+            title={"Products ↓ "}
+            text1={"Server SDK for fingerprint recognition"} href1={"/sdk"}
+            text2={"Server platform for fingerprint recognition"} href2={"/rest_api"}
+            text3={"Fingers capture and recognition for mobile devices"} href3={"/sdk"}
+          />
+          <DropDown 
+            title={"Solutions ↓ "}
+            text1={"Biometric Duplication"} href1={"/sdk"}
+            text2={"Fingerprint Card Conversion"} href2={"/sdk"}
+          />
           <Link style={{marginRight: 20}} href="/">
             Advantages
           </Link>

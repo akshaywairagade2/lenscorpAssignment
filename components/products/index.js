@@ -19,7 +19,7 @@ const Products = () => {
             logo={sdk}
             title={"Server SDK for fingerprint recognition"}
             linkText={"SDK"}
-            linkURL={"https://neurodactyl.com/sdk"}
+            linkURL={"/sdk"}
             description={"Detection, template extraction and matching (1:1, 1:N, M:N). Scans and photo images are supported."}
           />
         </div>
@@ -29,7 +29,7 @@ const Products = () => {
             logo={api}
             title={"Server platform for fingerprint recognition"}
             linkText={"REST API"}
-            linkURL={"https://neurodactyl.com/rest-api"}
+            linkURL={"/rest_api"}
             description={"Easy integration of biometric features, microservices architecture for system scaling and load balancing"}
           />
         </div>
