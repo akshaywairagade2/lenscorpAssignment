@@ -1,7 +1,5 @@
 
-import Image from 'next/image'
 import styles from './advantages.module.css';
-import logo from '../../public/start.png'
 import accuracy from '../../public/accuracy.png'
 import dpi from '../../public/dpi.png'
 import fingerprint from '../../public/fingerprint.png'
@@ -13,7 +11,7 @@ import Comp_Advantages from './advantage_component';
 const Advantages = () => {
   return (
     <div className={styles.mainadvantage} id='advantages'>
-      <h1>Advantages</h1>
+      <h1 style={{marginLeft:"3rem"}}>Advantages</h1>
       <div className={styles.advantage}>
         <Comp_Advantages 
           image={rocket} 

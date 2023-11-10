@@ -1,5 +1,4 @@
 
-import Link from 'next/link';
 import styles from './markets.module.css';
 import Image from 'next/image'
 

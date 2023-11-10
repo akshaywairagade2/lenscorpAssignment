@@ -1,5 +1,4 @@
 'use client'
-import Link from 'next/link';
 import styles from './requests.module.css';
 import {useState} from 'react'
 const Requests = (props) => {
@@ -21,17 +20,17 @@ const Requests = (props) => {
   }
   return (
     <div className={styles.contact_main} style={{display:'flex', flexDirection:'column'}}>
-      <text style={{fontSize:"40px", fontWeight:700, color:"white", marginBottom:"20px"}}>
+      <text style={{fontFamily:"'TildaSans', Arial, sans-serif",fontSize:"40px", fontWeight:700, color:"white", marginBottom:"20px"}}>
         {props.title}
       </text>
-      <text style={{fontSize:"20px",textAlign:"center", justifyContent:"center", fontWeight:400, color:"white"}}>If you want to get evaluation license, please fill the form below or send us an email to:<br></br> 
+      <text style={{fontFamily:"'TildaSans', Arial, sans-serif",fontSize:"20px",textAlign:"center", justifyContent:"center", fontWeight:400, color:"white"}}>If you want to get evaluation license, please fill the form below or send us an email to:<br></br> 
       <a href="info@neurodactyl.com">info@neurodactyl.com</a>
       </text>
       <div className={styles.sub_form}>
-        <div><label>Your Name</label><input type='text' placeholder='Your Name' onChange={(e) => { setName(e.target.value) }}></input></div>
-         <div><label>Company Name</label><input type='text' placeholder='Name of the company' onChange={(e) => { setCompany(e.target.value) }}></input></div>
-         <div> <label>Email</label><input type='email' placeholder='Your Email' onChange={(e) => { setEmail(e.target.value) }}></input></div>
-          <div> <label>Purpose</label><textarea type='text' placeholder='Please describe in few words your potential project or application, required size of the enrollment database for the test license' onChange={(e) => { setPurpose(e.target.value) }}></textarea></div>
+        <div><label>Your Name</label><input style={{padding:"10px"}} type='text' placeholder='Your Name' onChange={(e) => { setName(e.target.value) }}></input></div>
+         <div><label>Company Name</label><input style={{padding:"10px"}} type='text' placeholder='Name of the company' onChange={(e) => { setCompany(e.target.value) }}></input></div>
+         <div> <label>Email</label><input style={{padding:"10px"}} type='email' placeholder='Your Email' onChange={(e) => { setEmail(e.target.value) }}></input></div>
+          <div> <label>Purpose</label><textarea style={{padding:"15px"}} type='text' placeholder='Please describe in few words your potential project or application, required size of the enrollment database for the test license' onChange={(e) => { setPurpose(e.target.value) }}></textarea></div>
           <div></div> <button onClick={()=>sendResponse()}>{props.send}</button></div>
       </div>
   );

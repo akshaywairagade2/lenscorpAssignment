@@ -1,5 +1,4 @@
 'use client'
-import Link from 'next/link';
 import styles from './footer.module.css';
 import Image from 'next/image';
 import logo from '../../public/logo.png'

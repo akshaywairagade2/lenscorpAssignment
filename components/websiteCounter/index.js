@@ -18,7 +18,7 @@ const WebsiteCounter = () => {
             };
 
             const data = await axios.post(
-                "http://localhost:5000/api/countPost",
+                "https://lenscorp-service-website-counter.onrender.com/api/countPost",
                 {
 
                 },

@@ -9,7 +9,7 @@ const Products = () => {
   return (
     <div className={styles.product}>
       <div style={{display:'row'}}>
-      <text style={{fontSize:"50px", color:"blue", marginLeft:"4rem"}}>
+      <text style={{fontSize:"50px", color:"blue", marginLeft:"3rem"}}>
         Products
       </text>
       

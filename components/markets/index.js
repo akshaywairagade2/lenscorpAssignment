@@ -1,7 +1,5 @@
 
-import Link from 'next/link';
 import styles from './markets.module.css';
-import Image from 'next/image'
 import Comp_Market from './market_component';
 import id_sm from '../../public/id_sm.png'
 import banks_sm from '../../public/bank_sm.png'

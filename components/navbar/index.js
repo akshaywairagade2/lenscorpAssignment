@@ -3,7 +3,6 @@ import React, { useState } from 'react';
 import Link from 'next/link';
 import styles from './navbar.module.css';
 import Image from 'next/image';
-import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
 import DropDown from './dropdown';
 import logo from '../../public/logo.png'
 import emailImage from '../../public/email.png'
@@ -38,10 +37,10 @@ const Navbar = () => {
         <div className={styles.bar}></div>
         <div className={styles.bar}></div>
       </div>
-      <ul style={{fontFamily:"'TildaSans', Arial, sans-serif", fontSize:"25px", fontWeight:"400", color:"#ffffff"}} className={isMobileMenuOpen ? `${styles.navLinks} ${styles.show}` : styles.navLinks}>
+      <ul className={isMobileMenuOpen ? `${styles.navLinks} ${styles.show}` : styles.navLinks}>
         <li>
           <DropDown
-            title="Products ↓ "
+            title="Products"
             text1="Server SDK for fingerprint recognition"
             href1="/sdk"
             text2="Server platform for fingerprint recognition"
@@ -52,18 +51,18 @@ const Navbar = () => {
         </li>
         <li>
           <DropDown
-            title="Solutions ↓ "
+            title="Solutions"
             text1="Biometric Duplication"
             href1="https://neurodactyl.com/deduplication"
             text2="Fingerprint Card Conversion"
             href2="https://neurodactyl.com/fingerprintcards"
           />
         </li>
-        <li><Link href="#advantages">Advantages</Link></li>
-        <li><Link href="#markets">Markets</Link></li>
-        <li><Link href="#news">News</Link></li>
-        <li><Link href="#aboutus">About Us</Link></li>
-        <li><Link href="#contact">Contact</Link></li>
+        <li><Link style={{fontFamily:"'TildaSans', Arial, sans-serif", fontSize:"25px", fontWeight:"400", color:"#ffffff"}} href="#advantages">Advantages</Link></li>
+        <li><Link style={{fontFamily:"'TildaSans', Arial, sans-serif", fontSize:"25px", fontWeight:"400", color:"#ffffff"}}  href="#markets">Markets</Link></li>
+        <li><Link style={{fontFamily:"'TildaSans', Arial, sans-serif", fontSize:"25px", fontWeight:"400", color:"#ffffff"}}  href="#news">News</Link></li>
+        <li><Link style={{fontFamily:"'TildaSans', Arial, sans-serif", fontSize:"25px", fontWeight:"400", color:"#ffffff"}}  href="#aboutus">About Us</Link></li>
+        <li><Link style={{fontFamily:"'TildaSans', Arial, sans-serif", fontSize:"25px", fontWeight:"400", color:"#ffffff"}}  href="#contact">Contact</Link></li>
         <li onClick={handleEmailClick}>
         <Image
             src={emailImage}

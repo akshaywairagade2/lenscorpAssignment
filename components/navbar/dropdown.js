@@ -2,6 +2,7 @@
 import { useEffect, useRef, useState } from 'react';
 import { ClickAwayListener, Grow, MenuItem, MenuList, Paper, Popper } from '@mui/material';
 import Link from 'next/link'
+import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 
 const DropDown=(props)=>{
     const [open, setOpen] = useState(false);
@@ -40,7 +41,6 @@ const DropDown=(props)=>{
     return (
         <div>
         <Link 
-          style={{marginRight: 20}} 
           href="/"
           ref={anchorRef}
           id="composition-button"
@@ -48,8 +48,9 @@ const DropDown=(props)=>{
           aria-expanded={open ? 'true' : undefined}
           aria-haspopup="true"
           onClick={handleToggle}
+          style={{fontFamily:"'TildaSans', Arial, sans-serif", fontSize:"25px", fontWeight:"400", color:"#ffffff"}}
           >
-            {props.title}
+            {props.title}<ArrowDropDownIcon/>
           </Link>
           <Popper
           open={open}
