@@ -5,6 +5,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 75px;
 }
 .component_with_background div{
     background-color: white;

@@ -8,7 +8,7 @@ const Footer = () => {
   return (
     <div className={styles.footer_main}>
      <div><Image src={logo} width={170} height={30}></Image></div> 
-     <div style={{marginLeft: '15%', flexDirection:'column'}}>
+     <div style={{marginLeft: '22%', flexDirection:'column'}}>
      <div style={{textAlign:"center", justifyContent:"center"}}>
       <text>All Right Reserved, 2023. Neurodactyl, LLC.</text>
      </div>

@@ -67,21 +67,36 @@ const DropDown=(props)=>{
                   placement === 'bottom-start' ? 'left top' : 'left bottom',
               }}
             >
-              <Paper>
-                <ClickAwayListener onClickAway={handleClose}>
+              <Paper
+                style={{ borderRadius: "30px" }}
+              >
+                <ClickAwayListener onClickAway={handleClose} >
                   <MenuList
                     autoFocusItem={open}
                     id="composition-menu"
                     aria-labelledby="composition-button"
                     onKeyDown={handleListKeyDown}
-                    style={{display: 'flex', flexDirection: 'column'}}
+                    style={{ display: 'flex', flexDirection: 'column', padding: '18px 20px', wordWrap: 'inherit', maxWidth: 200, borderRadius: "30px", background: '#7000ce' }}
                   >
-                    <MenuItem onClick={handleClose}><a style={{color: 'black'}} href={props.href1}>{props.text1}</a></MenuItem>
-                    <MenuItem onClick={handleClose}><a style={{color: 'black'}} href={props.href2}>{props.text2}</a></MenuItem>
-                    <MenuItem onClick={handleClose}><a style={{color: 'black'}} href={props.href3}>{props.text3}</a></MenuItem>
+                    <MenuItem onClick={handleClose}>
+                      <a style={{ color: 'white', whiteSpace: 'normal' }} href={props.href1}>
+                        {props.text1}
+                      </a>
+                    </MenuItem>
+                    <MenuItem onClick={handleClose}>
+                      <a style={{ color: 'white', whiteSpace: 'normal' }} href={props.href2}>
+                        {props.text2}
+                      </a>
+                    </MenuItem>
+                    <MenuItem onClick={handleClose}>
+                      <a style={{ color: 'white', whiteSpace: 'normal' }} href={props.href3}>
+                        {props.text3}
+                      </a>
+                    </MenuItem>
                   </MenuList>
                 </ClickAwayListener>
               </Paper>
+
             </Grow>
           )}
         </Popper>

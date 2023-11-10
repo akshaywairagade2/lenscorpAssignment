@@ -10,7 +10,7 @@ const ContactUs = () => {
 
   const sendResponse=()=>{
     let desc=`Hello Sir/Ma'am,\nMy name is ${name}.\nMy email is ${email}.\n My phone number is ${phone}.\nHere is my ${question}\n\nRegards ${name}`
-    const recipientEmail = 'akshaywairagade2@gmail.com';
+    const recipientEmail = 'info@neurodactyl.com';
     const encodedDesc = encodeURIComponent(desc);
     window.location.href = `mailto:${recipientEmail}?subject=Contact%20Us%20Query&body=${encodedDesc}`;
     setEmail("");

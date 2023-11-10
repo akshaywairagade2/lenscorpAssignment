@@ -1,32 +1,64 @@
-/* styles/Navbar.module.css */
-
 .navbar {
-    position: sticky;
-    top: 0;
-    background-color: rgba(112,0,206,1);
-    padding: 1rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
+  position: sticky;
+  top: 0;
+  background-color: rgba(112, 0, 206, 1);
+  padding: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: row; /* Keep it horizontal by default */
+}
+
+.navbar li {
+  margin-right: 1rem;
+  align-items: flex-end;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+/* Media Query for Responsive Design */
+@media screen and (max-width: 964px) {
   .navbar ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
+    display: none; /* Hide the regular nav items */
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 60px; /* Adjust as needed based on your header height */
+    left: 0;
+    background-color: rgba(112, 0, 206, 1);
+    padding: 1rem;
   }
-  
+
+  .navbar ul.show {
+    display: flex; /* Show the mobile nav items when the class is added */
+  }
+
   .navbar li {
-    margin-right: 1rem;
-    /* text-align: 'right'; */
-    align-items: flex-end;
+    margin: 0;
+  }
+
+  .navbar .menu-toggle {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
   }
   
-  .navbar a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
+  .navbar .bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px 0;
   }
-  
+}

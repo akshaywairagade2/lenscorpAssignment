@@ -14,9 +14,8 @@ const Product_Component = (props) => {
         
        <p  style={{color:"blue" , textAlign:"center", marginTop:"20px", marginBottom:"20px"}}><b>{props.title}</b></p>
 
-      {/* <h1 style={{color:"blue" , textAlign:"center"}} ><a href={props.linkURL}><u>{props.linkText}</u></a></h1> */}
       <Link href={props.linkURL}>
-      <h1 style={{color:"blue" , textAlign:"center"}} ><u>{props.linkText}</u></h1>
+      <text style={{ color:"blue" , textAlign:"center", fontSize:"40px", fontWeight:"400"}} ><u>{props.linkText}</u></text>
       </Link>
 
       <p style={{color:"blue" , textAlign:"center"}}>{props.description}</p>
